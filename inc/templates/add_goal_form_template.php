@@ -41,13 +41,7 @@
           </div>
         </form>
       </article>
-      <aside class="col-md-3">
-        <div class="side-menu-wrapper">
-          <ul class="side-menu">
-            <li><a href="#">Add %</a></li>
-          </ul>
-        </div>
-      </aside>
+      <?php template( 'sidebar', 'echo' ); ?>
     </div>
   </div>
 </main>

@@ -9,6 +9,7 @@
         <?php $cost = get_cost( $_GET['edit'] )[0]; ?>
         <?php if ( $cost['user_id'] == $_COOKIE['user_id'] ): ?>
           <article class="col-md-9 table-wrapper">
+            <h2>Edit cost <i class="fa fa-angle-down red-bg"></i></h2>
             <form id="edit_cost_form" class="edit_cost_form row" action="" method="post">
               <input type="hidden" name="cost_id" value="<?php echo $cost['ID']; ?>">
               <div class="col-md-6">

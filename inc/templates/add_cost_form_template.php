@@ -5,6 +5,7 @@
   <div class="container">
     <div class="row">
       <article class="col-md-9 table-wrapper">
+        <h2>Add cost <i class="fa fa-angle-down red-bg"></i></h2>
         <form id="add_gain_form" class="add_gain_form row" action="" method="post">
           <div class="col-md-6">
             <label for="name">
@@ -41,13 +42,7 @@
           </div>
         </form>
       </article>
-      <aside class="col-md-3">
-        <div class="side-menu-wrapper">
-          <ul class="side-menu">
-            <li><a href="#">Add %</a></li>
-          </ul>
-        </div>
-      </aside>
+      <?php template( 'sidebar', 'echo' ); ?>
     </div>
   </div>
 </main>

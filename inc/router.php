@@ -84,6 +84,9 @@
 					case 'goals':
 						template( 'goals_table', 'echo' );
 						break;
+					case 'logout':
+						logout();
+						break;
 					
 					default:
 					template( 'my_profile', 'echo' );

@@ -65,6 +65,12 @@
 		}
 	}
 	
+	function logout(){
+		setcookie("is_logged");
+		setcookie("user_id");
+		header( 'Location: ' . URL . '' );
+	}
+	
 	function is_logged(){
 		$result = FALSE;
 		if ( !empty($_COOKIE['is_logged']) && $_COOKIE['is_logged'] == 1 ) {
