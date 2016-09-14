@@ -1,0 +1,54 @@
+<?php
+  if( !defined('APP_VERSION') ) exit('You can\'t access this file');
+
+
+  $out = '';
+  $out .= get_header( 'return' );
+  $out .= '<main id="main" class="text-center dark-bg">';
+    $out .= '<form id="assign-database" name="assign-database" class="assign-database" method="post" action="#">';
+      $out .= '<table>';
+        $out .= '<tr>';
+          $out .= '<td>';
+            $out .= '<label for="db_host">Database host: </label>';
+          $out .= '</td>';
+          $out .= '<td>';
+            $out .= '<input type="text" id="db_host" name="db_host">';
+          $out .= '</td>';
+        $out .= '</tr>';
+        $out .= '<tr>';
+          $out .= '<td>';
+            $out .= '<label for="db_name">Database name: </label>';
+          $out .= '</td>';
+          $out .= '<td>';
+            $out .= '<input type="text" id="db_name" name="db_name">';
+          $out .= '</td>';
+        $out .= '</tr>';
+        $out .= '<tr>';
+          $out .= '<td>';
+            $out .= '<label for="db_user">Database user: </label>';
+          $out .= '</td>';
+          $out .= '<td>';
+            $out .= '<input type="text" id="db_user" name="db_user">';
+          $out .= '</td>';
+        $out .= '</tr>';
+        $out .= '<tr>';
+          $out .= '<td>';
+            $out .= '<label for="db_pass">Database password: </label>';
+          $out .= '</td>';
+          $out .= '<td>';
+            $out .= '<input type="text" id="db_pass" name="db_pass">';
+          $out .= '</td>';
+        $out .= '</tr>';
+        $out .= '<tr>';
+          $out .= '<td>';
+          $out .= '</td>';
+          $out .= '<td>';
+            $out .= '<input type="submit" name="submit" value="Assign Database">';
+          $out .= '</td>';
+        $out .= '</tr>';
+      $out .= '</table>';
+    $out .= '</form>';
+  $out .= '</main>';
+  $out .= get_footer( 'return' );
+  return $out;
+?>
